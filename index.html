@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile Card Starter</title>
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    /* Container for the card */
+    .profile-card {
+      background-color: #1e1e1e;
+      width: 320px;
+      border-radius: 12px;
+      padding: 2rem 1.5rem 2.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+      text-align: center;
+    }
+    /* Profile image */
+    .profile-image {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 1rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #3cb371;
+      box-shadow: 0 0 12px #3cb371aa;
+      background-color: #333;
+    }
+    /* Name styling */
+    .profile-name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+      color: #eee;
+    }
+    /* Location */
+    .profile-location {
+      font-size: 0.9rem;
+      color: #a8d70a;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    /* Quote or bio */
+    .profile-description {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #bbb;
+      margin-bottom: 1.8rem;
+    }
+    /* Buttons container and style */
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+    .btn {
+      background-color: #2a2a2a;
+      color: #ccc;
+      font-weight: 600;
+      padding: 0.6rem 0;
+      text-align: center;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: inset 0 -2px 0 #1b1b1b;
+      transition: background-color 0.2s ease, color 0.2s ease;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+    .btn:hover, .btn:focus {
+      background-color: #3cb371;
+      color: #121212;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <section class="profile-card" role="region" aria-label="Jessica Randall profile">
+    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&amp;ixid=M3w5dHx8MHx8fHx8fHx8Mnx8MTY4ODAzNjcxNA&amp;auto=format&amp;fit=crop&amp;w=256&amp;q=80" alt="Portrait of Jessica Randall" class="profile-image" />
+    <h1 class="profile-name">Jessica Randall</h1>
+    <p class="profile-location">London, United Kingdom</p>
+    <p class="profile-description">“Front-end developer and avid reader.”</p>
+    <nav class="btn-container" aria-label="Jessica Randall social links">
+      <button class="btn" type="button">GitHub</button>
+      <button class="btn" type="button">Frontend Mentor</button>
+      <button class="btn" type="button">LinkedIn</button>
+      <button class="btn" type="button">Twitter</button>
+      <button class="btn" type="button">Instagram</button>
+    </nav>
+  </section>
+</body>
+</html>
+
